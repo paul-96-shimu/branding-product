@@ -2,11 +2,13 @@ import React from 'react';
 
 import logo from '../assets/P.svg'
 import logo2 from '../assets/Potu.svg'
+import logo3 from '../assets/NAv.svg'
 import { FaArrowUp } from "react-icons/fa6";
 
+
 const Navber = () => {
-    return (
-        <div className="navbar mb-30">
+  return (
+    <div className="navbar mb-30">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -30,11 +32,11 @@ const Navber = () => {
             <li><a>Contact</a></li>
           </ul>
         </div>
-       <div className='flex gap-3.5'>
-         <img src={logo } alt=""  className='bg-black p-4' />
-        <img src={logo2} alt="" className='bg-white' />
-       </div>
-       
+        <div className='flex gap-3.5'>
+          <img src={logo} alt="" className='bg-black p-4' />
+          <img src={logo2} alt="" className='bg-white' />
+        </div>
+
       </div>
 
       <div className="navbar-center hidden lg:flex">
@@ -46,11 +48,14 @@ const Navber = () => {
         </ul>
       </div>
 
-      <div className="navbar-end">
-        <a className="btn rounded-full text-xl">Let’s Talk <FaArrowUp   className="ml-2 rotate-45"  /></a>
+      <div className="navbar-end ">
+
+        <button className="btn btn-neutral btn-outline rounded-full">Let’s Talk <FaArrowUp className="ml-2 rotate-45 " /></button>
+
+        <img src={logo3} alt="" className='ml-6'  />
       </div>
     </div>
-    );
+  );
 };
 
 export default Navber;

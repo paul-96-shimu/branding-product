@@ -7,8 +7,8 @@ import underline from '../assets/Vector 163.svg'
 import underline2 from '../assets/Group 427320088 (1).svg'
 import slider from '../assets/Slider Button.svg'
 import icon from '../assets/round bg icon.svg'
-
-
+import button from '../assets/Button.svg'
+import shape from '../assets/rain.svg';
 import { FaMobileAlt } from 'react-icons/fa';
 
 const MyLatest = () => {
@@ -54,6 +54,12 @@ const MyLatest = () => {
                         Commonly used in the graphic, print <br />
                         & publishing industris for previewing visual  <br />layout and mockups.
                     </p>
+
+                    <div className='flex gap-20'>
+                        <img src={button} alt="Star" className="mx-auto mt-2" />
+
+                        <img src={shape} alt="Star" className="mx-auto mt-2 w-20"  />
+                    </div>
                 </div>
 
 
