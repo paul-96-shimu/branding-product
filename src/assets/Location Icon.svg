@@ -1,0 +1,24 @@
+<svg width="50" height="72" viewBox="0 0 50 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="50" height="72" fill="#2D2D2D"/>
+<g id="01_UI Designer" clip-path="url(#clip0_0_1)">
+<rect width="1800" height="9424" transform="translate(-1177 -8847)" fill="white"/>
+<g id="Contact &#38; Footer">
+<rect id="Bg" x="-1180" y="-883.45" width="1803" height="1465" fill="#141414"/>
+<g id="Contact">
+<g id="RIght">
+<g id="Office">
+<g id="Location Icon">
+<path id="Vector" d="M25 1.61133C11.75 1.61133 1 11.8419 1 24.4422C1 38.9407 17 61.9166 22.875 69.8524C23.1189 70.1874 23.4385 70.46 23.8078 70.648C24.1771 70.8359 24.5856 70.9339 25 70.9339C25.4144 70.9339 25.8229 70.8359 26.1922 70.648C26.5615 70.46 26.8811 70.1874 27.125 69.8524C33 61.9199 49 38.9524 49 24.4422C49 11.8419 38.25 1.61133 25 1.61133Z" stroke="#2B2B2B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M25 33.6077C29.4183 33.6077 33 30.0263 33 25.6085C33 21.1907 29.4183 17.6094 25 17.6094C20.5817 17.6094 17 21.1907 17 25.6085C17 30.0263 20.5817 33.6077 25 33.6077Z" fill="#454545" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1800" height="9424" fill="white" transform="translate(-1177 -8847)"/>
+</clipPath>
+</defs>
+</svg>
