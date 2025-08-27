@@ -1,8 +1,10 @@
 import React from 'react';
 
 import bannerimg from  '../assets/Image_Group.jpg'
-import underline from '../assets/Vector 163.svg'
-import underline2 from  '../assets/Group 427320088 (1).svg'
+import underline from '../assets/Arrow.png'
+
+
+import underline3 from  '../assets/banner side arrow.svg'
 import { FaArrowUp } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -12,7 +14,7 @@ import Navber from './Navber';
 const Banner = () => {
     return (
         <div
-            className="min-h-screen"
+            className=" h-[1435px] "
             style={{
                 backgroundImage: `url(${bannerimg})`,
                 backgroundSize: 'cover',
@@ -31,11 +33,14 @@ const Banner = () => {
             </div>
 
 
-            <div className=" pl-28">
+            <div className=" pl-28 ">
                 <h3 className="text-3xl mb-4 ">Hi, I’M JON KABIR</h3>
                 <p className="mb-6">
-                    <span className="text-[#FF6F0F] text-7xl font-bold">Branding,</span> <br />
-                    <span className="text-7xl font-bold text-black">Product UI/UX</span> <br />
+                  <div className='flex items-center  gap-10'>
+                      <span className="text-[#FF6F0F] text-7xl font-bold font">Branding,</span> <br />
+                    <img src={underline3} alt="" className='w-[295px] h-[116px]' />
+                  </div>
+                    <span className="text-7xl font-bold text-black ">Product UI/UX</span> <br />
                     <span className="text-7xl font-bold text-[#9E9E9E]">& Design.</span>
                 </p>
 
@@ -47,7 +52,7 @@ const Banner = () => {
                 {/* Underlines */}
                 <div className="flex items-center gap-4 mb-6">
                     <img src={underline} alt="underline1" />
-                    <img src={underline2} alt="underline2" />
+                 
                 </div>
 
                 {/* Button & Social */}

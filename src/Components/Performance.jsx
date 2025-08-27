@@ -3,8 +3,8 @@ import React from 'react';
 import image from '../assets/image 2499.png'
 const Performance = () => {
     return (
-        <div>
-            <img src={ image} alt="" />
+        <div className='w-[]'>
+            <img src={ image} alt="" className='w-[1800px]' />
         </div>
     );
 };

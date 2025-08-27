@@ -10,7 +10,7 @@ import Protal from './Protal';
 
 const Home = () => {
     return (
-        <div>
+        <div className=' w-[1800px] mx-auto'>
             <Banner></Banner>
             <Service></Service>
             <MyLatest></MyLatest>

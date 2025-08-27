@@ -1,18 +1,30 @@
 import React from 'react';
 import logoimg from '../assets/image 2507.svg'
-
+import logoimg2 from '../assets/round arrow.svg'
 
 const Experience = () => {
     return (
         <div >
             <div className='pl-44 pt-38 pb-54'>
-                <h2 className='font-medium'>
-                    <span className='text-[#000] text-4xl'>My Experience </span> <br />
-                    <span className='text-gray-500 text-4xl mt-4'>& Skills.</span>
+                <div className='flex justify-between  items-center'>
 
-                    <img src={logoimg} alt="" />
+                    <div>
+                        <h2 className='font-medium'>
+                            <span className='text-[#000] text-[90px]'>My Experience </span> <br />
+                            <span className='text-gray-500 text-[90px] mt-4'>& Skills.</span>
 
-                </h2>
+                            <img src={logoimg} alt="" className='w-[311px] h-[79px]' />
+
+                        </h2>
+                    </div>
+
+
+                    <div>
+
+                        <img src={logoimg2} alt="" className='w-[205px]' />
+                    </div>
+
+                </div>
 
 
 
@@ -115,17 +127,17 @@ const Experience = () => {
 
 
                         <div className='mt-16'>
-                            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Great Interfac</button>
-                            <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Mobile App</button>
-                            <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Marketing</button>
-                            <button type="button" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">UI/UX Design</button>
+                            <button type="button" class="text-white bg-black focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Great Interfac</button>
+                            <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none bg-black rounded-full border border-gray-200  focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Mobile App</button>
+                            <button type="button" class="text-white bg-black hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Marketing</button>
+                            <button type="button" class="text-white bg-black border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">UI/UX Design</button>
                         </div>
 
                         <br />
                         <div className='mt-7.5'>
-                            <button type="button" class="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">UI/UX</button>
-                            <button type="button" class="text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Product Design</button>
-                            <button type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:focus:ring-yellow-900">UI/UX Design</button> & more....
+                            <button type="button" class="text-white bg-black hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">UI/UX</button>
+                            <button type="button" class="text-white bg-black hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Product Design</button>
+                            <button type="button" class="text-white bg-black hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:focus:ring-yellow-900">UI/UX Design</button> & more....
 
                         </div>
                     </div>
@@ -136,7 +148,7 @@ const Experience = () => {
                     <div className='pl-44  pb-54  '>
                         <h3 className='text-black text-3xl mb-11 font-bold '>Award & Achivment</h3>
 
-                        <div className='bg-[#F5F4F5] pt-22 pb-9 pl-8 pr-86 rounded-4xl'>
+                        <div className='bg-[#F5F4F5] pb-9 pr-6 pl-8 pt-22 rounded-4xl '>
 
 
 
@@ -151,7 +163,7 @@ const Experience = () => {
 
 
 
-                            <div className='flex gap-2'>
+                            <div className='flex justify-between items-center w-full mt-4'>
 
                                 <small className='text-gray-300 font-normal'>Rising Star Designer</small>
                                 <small>2018</small>
@@ -165,7 +177,7 @@ const Experience = () => {
 
 
 
-                        <div className='bg-[#F5F4F5] pt-22 pb-9 pl-8 pr-86 rounded-4xl mt-11 '>
+                        <div className='bg-[#F5F4F5] pb-9 pr-6 pl-8 pt-22 rounded-4xl mt-11 w-[574px] h-[225px]'>
 
 
 
@@ -181,7 +193,7 @@ const Experience = () => {
 
 
 
-                            <div className='flex gap-6'>
+                            <div className='flex justify-between'>
                                 <small className='text-gray-300 font-normal'>UI/UX Award winner</small>
                                 <small>2023</small>
                             </div>

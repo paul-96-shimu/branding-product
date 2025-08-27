@@ -1,2 +1,54 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
 @plugin "daisyui";
+
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/Fonts/OTF/Satoshi-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/Fonts/OTF/Satoshi-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+.font-satoshi-extra {
+  font-family: 'Satoshi', sans-serif;
+
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+} 
+
+
+
+
+
+/* 
+.family{
+  font-family: 'Satoshi';
+
+}
+
+body {
+  font-family: 'Satoshi', sans-serif;
+} */
+
+/* @font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Bold.woff2') format('woff2'),
+       url('/fonts/Satoshi-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+} */
