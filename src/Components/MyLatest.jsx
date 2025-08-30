@@ -14,8 +14,8 @@ import { FaMobileAlt } from 'react-icons/fa';
 const MyLatest = () => {
     return (
         <div className=''>
-            <div className='flex   gap-35 mt-60 ml-44 '>
-                <h2 className='font-medium'>
+            <div className='flex   gap-35 mt-60 ml-44  '>
+                <h2 className='font-medium pl-30'>
                     <span className='text-black text-8xl'>My Latest</span> <br />
                     <span className='text-gray-500 text-8xl'>Work.</span>
 
@@ -40,10 +40,10 @@ const MyLatest = () => {
 
 
 
-            <div className=' flex overflow-hidden gap-[100px]'>
+            <div className=' flex overflow-hidden gap-[80px]'>
 
                 
-                <div className="ml-[-600px] flex pl-20 items-center bg-[#F5F4F5] rounded-4xl container mx-auto">
+                <div className="ml-[-1100px] flex pl-20 items-center bg-[#F5F4F5] rounded-4xl container mx-auto">
                     <div>
                         <div className=" relative mb-6 ">
 
@@ -56,11 +56,7 @@ const MyLatest = () => {
 
                         </p>
 
-                        <div className='flex gap-20'>
-                            <img src={button} alt="Star" className="mx-auto mt-2" />
-
-                            <img src={shape} alt="Star" className="mx-auto mt-2 w-20" />
-                        </div>
+                       
                     </div>
 
 
@@ -70,7 +66,7 @@ const MyLatest = () => {
               
 
 
-                <div className='w-full bg-[#F5F4F5]  flex items-center rounded-4xl' style={{
+                <div className='w-full bg-[#F5F4F5] flex items-center rounded-4xl' style={{
                     backgroundImage: `url(${img})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
@@ -99,7 +95,7 @@ const MyLatest = () => {
 
                 </div>
 
-                <div className="mr-[-600px] flex pl-20 items-center bg-[#F5F4F5] rounded-4xl container mx-auto">
+                <div className="mr-[-1100px] flex pl-20 items-center bg-[#F5F4F5] rounded-4xl container mx-auto">
                     <div>
                         <div className=" relative mb-6 ">
 

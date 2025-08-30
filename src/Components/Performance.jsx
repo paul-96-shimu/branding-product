@@ -12,23 +12,29 @@ import image3 from '../assets/Vector 1234 underline.png'
 
 import image4 from '../assets/Slider Button orange.png'
 import image5 from '../assets/image 2495@2x.png'
+import image6 from '../assets/Text Shape.png'
+import shape from '../assets/Shape 4444.svg';
+
 
 const Performance = () => {
     return (
 
 
+        <div className='relative'
 
-        <div className=' w-[1800px] h-[1290px] mx-auto  relative'
+
+     
             style={{
-                backgroundImage: `url(${image})`,
+                // backgroundImage: `url(${image})`,
+                backgroundImage:`url(${image })`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
 
             }}>
-            <div className="flex items-center gap-12">
+            <div className="flex items-center gap-12 container mx-auto pb-86 pt-35">
                 {/* ===== Left Side (Images) ===== */}
-                <div className="relative w-[960px] h-[804px]">
+                <div className="relative shrink-0  w-[660px] h-[804px]">
                     {/* Base image */}
                     <img src={image5} alt="" className="w-[960px] h-[804px]" />
 
@@ -55,26 +61,30 @@ const Performance = () => {
 
 
 
-                    <p className="text-[90px] text-black  text-left absolute top-1/3 left-1/2 -translate-x-1/2  font-bold  leading-snug max-w-[700px] ">
+                  
+                </div>
+
+                {/* ===== Right Side (Text Content) ===== */}
+                <div className="text-right">
+                    <div>
+                        <img src={ shape } alt="" className='w-[86px] h-[89px]' />
+                        
+                        <strong className="block text-xl font-normal text-black">
+                        Shamol Cina
+                    </strong>
+                    <small className=" text-gray-400 text-[20px] mb-4 ">
+                        CEO & Head of Sky Tech Inc.
+                    </small></div>
+                      <p className="text-[90px] text-black ml-[-500px] relative z-10  font-normal  leading-snug ">
                         "Extraordinary Performance
                         Quick solutions. Highly
                         recommended."
                     </p>
-                </div>
 
-                {/* ===== Right Side (Text Content) ===== */}
-                <div className="">
-                    <strong className="block text-2xl font-bold text-black text-left">
-                        Shamol Cina
-                    </strong>
-                    <small className="block text-gray-600 mb-4 text-left">
-                        CEO & Head of Sky Tech Inc.
-                    </small>
-
-                   <div className='flex gap-80'>
+                   <div className='flex justify-end gap-80'>
 
 
-                     <div className='flex items-center gap-6'>
+                     <div className='flex items-center gap-6 mt-16 '>
                         <img src={image3} alt="" />
 
 
@@ -86,7 +96,9 @@ const Performance = () => {
 
                     </div>
 
-                    <img src={image4} alt="" />
+                   <div>
+                     <img src={image4} alt="" className='mt-16' />
+                   </div>
                    </div>
 
 
@@ -96,6 +108,9 @@ const Performance = () => {
 
 
             </div>
+
+
+            <img src={image6} alt="" className='absolute  right-[-10px] bottom-[-70px] px-10 ' />
 
         </div>
     );

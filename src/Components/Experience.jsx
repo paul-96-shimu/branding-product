@@ -5,7 +5,7 @@ import logoimg2 from '../assets/round arrow.svg'
 const Experience = () => {
     return (
         <div >
-            <div className='pl-44 pt-38 pb-54'>
+            <div className='pl-44 pt-38 pb-54 container mx-auto '>
                 <div className='flex justify-between  items-center'>
 
                     <div>
