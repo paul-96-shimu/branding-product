@@ -23,7 +23,7 @@ const Service = () => {
 
             <div className='bg-[#141414]  '>
 
-                <div className=' container mx-auto flex   gap-19 items-center pt-38 pb-63'>
+                <div className=' container mx-auto flex   gap-19 items-center '>
 
                     <div>
                         <h1 className=''> <span className='text-white text-6xl '>Service That </span> <br />
@@ -48,7 +48,9 @@ const Service = () => {
                     </div>
 
 
-                    <div className='pt-57'>
+                    <div className='mt-100  mb-40'>
+
+                           {/* Service 1 */}
                         <div className="flex items-start gap-12 leading-14">
                             <img src={logoimg3} alt="" className="w-[99px] h-[95px]" />
 

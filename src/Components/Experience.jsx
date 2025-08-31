@@ -5,7 +5,7 @@ import logoimg2 from '../assets/round arrow.svg'
 const Experience = () => {
     return (
         <div >
-            <div className='pl-44 pt-38 pb-54 container mx-auto '>
+            <div className=' container mx-auto  mt-55'>
                 <div className='flex justify-between  items-center'>
 
                     <div>
@@ -40,11 +40,11 @@ const Experience = () => {
                                 <div className='border mt-12'>  </div>
                             </div>
 
-                            <div className=' grid grid-cols-3  gap-30 mt-12 items-center justify-center'>
+                            <div className=' grid grid-cols-3 mt-12  gap-25  items-center justify-center'>
                                 <small className=' text-xl font-normal'>
                                     2019 - Present
                                 </small>
-                                <div>
+                                <div  className='whitespace-nowrap'>
                                     <h4 className='text-2xl'> Product Designer</h4>
 
                                     <small className='text-gray-300'>
@@ -68,11 +68,11 @@ const Experience = () => {
                             <div className='border mt-12'>  </div>
                         </div>
 
-                        <div className=' grid grid-cols-3  gap-30 mt-12 items-center justify-center'>
+                        <div className=' grid grid-cols-3  gap-25 mt-12 items-center justify-center'>
                             <small className=' text-xl font-normal'>
                                 2011 - 2014
                             </small>
-                            <div>
+                            <div  className='whitespace-nowrap'>
                                 <h4 className='text-2xl'> Art & Design Director</h4>
 
                                 <small className='text-gray-300'>
@@ -95,11 +95,11 @@ const Experience = () => {
 
 
 
-                        <div className=' grid grid-cols-3  gap-30 mt-12 items-center justify-center'>
+                        <div className=' grid grid-cols-3 gap-25 mt-12 items-center justify-center'>
                             <small className=' text-xl font-normal'>
                                 2011 - 2014
                             </small>
-                            <div>
+                            <div  className='whitespace-nowrap'>
                                 <h4 className='text-2xl'> Senior Designer</h4>
 
                                 <small className='text-gray-300'>
@@ -134,12 +134,12 @@ const Experience = () => {
                         </div>
 
                         <br />
-                        <div className='mt-7.5'>
+                    
                             <button type="button" class="text-white bg-black hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">UI/UX</button>
                             <button type="button" class="text-white bg-black hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Product Design</button>
                             <button type="button" class="text-white bg-black hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:focus:ring-yellow-900">UI/UX Design</button> & more....
 
-                        </div>
+                       
                     </div>
 
 

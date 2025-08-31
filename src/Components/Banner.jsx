@@ -15,6 +15,7 @@ import image0 from '../assets/double-quote-left.png'
 
 import image2 from '../assets/black Ellipse 881.png'
 import image3 from '../assets/Rectangle 3793 (1).png'
+import link from '../assets/Linkeding.svg'
 import Navber from './Navber';
 
 const Banner = () => {
@@ -76,10 +77,10 @@ const Banner = () => {
                         <h2 className="font-semibold">Social</h2>
                         <FaFacebookF className="bg-white text-black p-4 w-15 h-15 rounded-full" />
                         <FaInstagram className="bg-white text-black  p-4 w-15 h-15 rounded-full" />
-                        <FaLinkedinIn className="bg-white text-black  p-4 w-15 h-15 rounded-full" />
+                        <img src={link} alt="" className=' w-15 h-15 ' />
                     </div>
 
-                    <div className='absolute right-180 bottom-20 z-0'  >
+                    <div className='absolute right-160 bottom-5 z-0'  >
 
                         <img src={image3} alt="" className='w-[390px]' />
 
