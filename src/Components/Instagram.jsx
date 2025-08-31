@@ -3,7 +3,7 @@ import logoimg from '../assets/image 2507.svg'
 import prearrow from '../assets/Prev.svg'
 import nextarrow from '../assets/Next.svg'
 
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+
 
 const Instagram = () => {
     return (
@@ -41,8 +41,8 @@ const Instagram = () => {
 
 
                         <div className='flex gap-8'>
-                            <img src={prearrow} alt="" className='w-30' />
-                            <img src={nextarrow} alt="" />
+                           <button> <img src={prearrow} alt="" className='w-30' /></button>
+                          <button>  <img src={nextarrow} alt="" /></button>
 
                         </div>
                     </div>
