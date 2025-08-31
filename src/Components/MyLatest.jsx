@@ -27,7 +27,7 @@ const MyLatest = () => {
       <div className="flex gap-35 mt-60 ml-44">
         <h2 className="font-medium pl-30">
           <span className="text-black text-8xl">My Latest</span> <br />
-          <span className="text-gray-500 text-8xl">Work.</span>
+          <span className="text-[rgba(0,0,0,0.4)] text-8xl">Work.</span>
           <img src={logoimg} alt="" className="w-60" />
         </h2>
 

@@ -27,7 +27,7 @@ const Instagram = () => {
                 <div className="flex flex-col pl-30">
                     <div>
                         <h2 className="text-[90px] font-bold text-black">Instagram</h2>
-                        <h3 className="text-[90px] text-gray-300 font-semibold mt-1">@rakir.</h3>
+                        <h3 className="text-[90px] text-[rgba(0,0,0,0.4)] font-semibold mt-1">@rakir.</h3>
 
                         {/* Orange hand-drawn underline (use img or border) */}
                         <img src={logoimg} alt="" className='w-[269px] h-[79px]' />

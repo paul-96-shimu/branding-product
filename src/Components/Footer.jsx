@@ -17,8 +17,8 @@ const Footer = () => {
                 {/* Left Section */}
                 <div className="space-y-10">
                     <h1 className="text-8xl ">
-                        <span className="text-gray-400">Let’s</span>
-                        <span className="text-white">Start</span> <br />
+                        <span className="text-[(255, 255, 255, 0.40)] ">Let’s</span>
+                        <span className="text-white ml-2">Start</span> <br />
                         <span className="text-[#FF6F0F]">Talking.</span>
                     </h1>
 

@@ -11,7 +11,7 @@ const Experience = () => {
                     <div>
                         <h2 className='font-medium'>
                             <span className='text-[#000] text-[90px]'>My Experience </span> <br />
-                            <span className='text-gray-500 text-[90px] mt-4'>& Skills.</span>
+                            <span className='text-[rgba(0,0,0,0.4)] text-[90px] mt-4'>& Skills.</span>
 
                             <img src={logoimg} alt="" className='w-[311px] h-[79px]' />
 

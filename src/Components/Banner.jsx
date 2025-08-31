@@ -42,7 +42,7 @@ const Banner = () => {
             </div>
 
 
-            <div className="container mx-auto pb-40">
+            <div className="container mx-auto pb-40 ">
                 <h3 className="text-3xl mb-4 ">Hi, I’M JON KABIR</h3>
                 <p className="mb-6">
                     <div className='flex items-center  gap-10'>
@@ -54,15 +54,12 @@ const Banner = () => {
                 </p>
 
                 <div className="mb-6">
-                    <small className="block text-lg font-semibold">EMAIL</small>
-                    <p className="text-sm text-[#040404]">Contact@rakabir.com</p>
+                    <small className="block text-[15px] font-semibold text-[rgba(0,0,0,0.6)]">EMAIL</small>
+                    <p className="text-[28px] text-[#040404]">Contact@rakabir.com</p>
+                     <img src={underline} alt="underline1" className='w-[530px]' />
                 </div>
 
-                {/* Underlines */}
-                <div className="flex items-center gap-4 mb-6">
-                    <img src={underline} alt="underline1" />
-
-                </div>
+                
 
                 {/* Button & Social */}
                 <div className="flex items-center gap-10">
