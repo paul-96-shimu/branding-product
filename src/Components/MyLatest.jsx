@@ -52,7 +52,7 @@ const MyLatest = () => {
       {/* Slider Section */}
       <div
         ref={sliderRef}  
-        className="flex overflow-x-hidden gap-[80px] scroll-smooth"
+        className="flex gap-[80px] scroll-smooth overflow-hidden"
       >
         {/* Card 1 */}
         <div

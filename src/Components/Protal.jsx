@@ -1,4 +1,6 @@
 import React from 'react';
+
+import Marquee from "react-fast-marquee";
 import icon from '../assets/Amazone.svg'
 import icon2 from '../assets/Hurra.svg'
 import icon3 from '../assets/Djuice.svg'
@@ -21,38 +23,36 @@ import icon11 from '../assets/dijiuce.svg'
 
 const Protal = () => {
   return (
-    <div className='bg-black  pt-18 pb-18 mt-20'>
-      <div className='flex  justify-evenly gap-6'>
+  <div className="bg-black py-20 mt-20">
+      {/* First Row */}
+      <Marquee speed={60} gradient={false} pauseOnHover>
+        <div className="flex items-center gap-10">
+          <img src={icon7} alt="" />
+          <img src={icon5} alt="" />
+          <img src={icon8} alt="" />
+          <img src={icon5} alt="" />
+          <img src={icon9} alt="" />
+          <img src={icon5} alt="" />
+          <img src={icon10} alt="" />
+          <img src={icon5} alt="" />
+          <img src={icon11} alt="" />
+        </div>
+      </Marquee>
 
-        <img src={icon7} alt="" />
-        <img src={icon5} alt="" />
-        <img src={icon8} alt="" />
-        <img src={icon5} alt="" />
-        <img src={icon9} alt="" />
-        <img src={icon5} alt="" />
-        <img src={icon10} alt="" />
-        <img src={icon5} alt="" />
-        <img src={icon11} alt="" />
-        
-     
-
-
-      </div>
-      <div className='flex justify-evenly gap-6 mt-4'>
-        <img src={icon3} alt="" srcset="" />
-        <img src={icon5} alt="" />
-        <img src={icon2} alt="" srcset="" />
-        <img src={icon5} alt="" />
-        <img src={icon} alt="" srcset="" />
-        <img src={icon5} alt="" />
-        <img src={icon6} alt="" srcset="" />
-        <img src={icon5} alt="" />
-        <img src={icon4} alt="" srcset="" />
-
-      </div>
-
-
-
+      {/* Second Row */}
+      <Marquee speed={50} gradient={false} pauseOnHover direction="right" className="mt-6">
+        <div className="flex items-center gap-10">
+          <img src={icon3} alt="" />
+          <img src={icon5} alt="" />
+          <img src={icon2} alt="" />
+          <img src={icon5} alt="" />
+          <img src={icon} alt="" />
+          <img src={icon5} alt="" />
+          <img src={icon6} alt="" />
+          <img src={icon5} alt="" />
+          <img src={icon4} alt="" />
+        </div>
+      </Marquee>
     </div>
 
   );
