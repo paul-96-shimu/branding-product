@@ -18,7 +18,7 @@ const Footer = () => {
             ">
                 {/* Left Section */}
                 <div className="">
-                    <div className='flex items-center gap-[34px] mb-27'>
+                    <div className='flex items-center  justify-between mb-27'>
                         <div>
 
                             <h1 className="text-8xl ">
@@ -30,7 +30,7 @@ const Footer = () => {
 
                         </div>
                         <div>
-                            <img src={shape} alt="Shape" className="w-[86 px] mt-10" />
+                            <img src={shape} alt="Shape" className="w-[86px] mt-10" />
                         </div>
                     </div>
 
@@ -103,7 +103,7 @@ const Footer = () => {
                             <img src={star} alt="Star" className=" w-[252px] h-[252px]" />
 
 
-                            <div className="absolute inset-0 flex flex-col items-center justify-center  text-black right-50">
+                            <div className="absolute inset-0 flex  flex-col items-center justify-center  font-bold  text-black right-30 -rotate-20 ">
                                 <h6>LET’S <br /> ROCK & ROLL</h6>
 
                                 <div className=" border-t border-black mt-1 w-[133px]" />
@@ -165,7 +165,7 @@ const Footer = () => {
 
                           
                                 <span className="absolute top-15 left-10 
-      font-semibold text-[#FF6F0F] text-[20px] font-satoshi-extra pointer-events-none">
+                                      font-semibold text-[#FF6F0F] text-[20px] font-satoshi-extra pointer-events-none">
                                     Google Map
                                 </span>
                             </div>
@@ -182,10 +182,10 @@ const Footer = () => {
             ">
                 <h6 >  <span >©2025. </span> <span className="text-gray-500">All Right Reserved</span></h6>
                 <img src={logo2} alt="" />
-                <div className="text-gray-500 space-x-4 pb-10 mt-15">
-                    <a href="#" className='text-white text-xl'>Insta</a>  .
-                    <a href="#" className='text-gray-500 text-xl'>Facebook</a>  .
-                    <a href="#" className='text-gray-500 text-xl'>Twitter</a>
+                <div className="text-gray-500 space-x-4 pb-10 mt-15 ">
+                    <a href="#" className='text-white text-sm'>Insta</a>  .
+                    <a href="#" className='text-gray-500 text-sm'>Facebook</a>  .
+                    <a href="#" className='text-gray-500 text-sm'>Twitter</a>
                 </div>
             </div>
 
