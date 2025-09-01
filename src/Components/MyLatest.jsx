@@ -9,6 +9,11 @@ import button from '../assets/Button.svg';
 import shape from '../assets/rain.svg';
 import { FaMobileAlt } from 'react-icons/fa';
 
+import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaLongArrowAltLeft } from "react-icons/fa";
+
+
+
 const MyLatest = () => {
   const sliderRef = useRef(null);
 
@@ -39,19 +44,29 @@ const MyLatest = () => {
         </p>
 
         {/* Slider Buttons */}
-        <div className="mt-12 flex gap-4">
-          <button onClick={scrollLeft}>
-            <img src={slider} alt="prev" className="w-10 rotate-180" />
+
+        <div className="flex items-center gap-4">
+          {/* Left Button */}
+          <button
+            onClick={scrollLeft}
+            className="w-12 h-12 flex items-center justify-center rounded-full border border-black bg-white hover:bg-gray-100 transition"
+          >
+            <FaLongArrowAltLeft className="w-5 h-5 text-black" />
           </button>
-          <button onClick={scrollRight}>
-            <img src={slider} alt="next" className="w-10" />
+
+          {/* Right Button */}
+          <button
+            onClick={scrollRight}
+            className="w-12 h-12 flex items-center justify-center rounded-full bg-black hover:bg-gray-800 transition"
+          >
+            <FaLongArrowAltRight className="w-5 h-5 text-white" />
           </button>
         </div>
       </div>
 
       {/* Slider Section */}
       <div
-        ref={sliderRef}  
+        ref={sliderRef}
         className="flex gap-[80px] scroll-smooth overflow-hidden"
       >
         {/* Card 1 */}
