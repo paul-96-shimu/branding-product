@@ -97,7 +97,7 @@ const Performance = () => {
                     </div>
 
                    <div>
-                     <img src={image4} alt="" className='mt-16' />
+                   <button>  <img src={image4} alt="" className='mt-16' /></button>
                    </div>
                    </div>
 

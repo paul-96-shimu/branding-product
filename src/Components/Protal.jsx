@@ -25,7 +25,7 @@ const Protal = () => {
   return (
   <div className="bg-black py-20 mt-20">
       {/* First Row */}
-      <Marquee speed={60} gradient={false} pauseOnHover>
+      <Marquee speed={60} gradient={false} pauseOnHover={false}>
         <div className="flex items-center gap-10">
           <img src={icon7} alt="" />
           <img src={icon5} alt="" />
@@ -40,7 +40,7 @@ const Protal = () => {
       </Marquee>
 
       {/* Second Row */}
-      <Marquee speed={50} gradient={false} pauseOnHover direction="right" className="mt-6">
+      <Marquee speed={50} gradient={false} pauseOnHover={false} direction="right" className="mt-6">
         <div className="flex items-center gap-10">
           <img src={icon3} alt="" />
           <img src={icon5} alt="" />
