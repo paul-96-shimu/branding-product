@@ -6,7 +6,7 @@ import logoimg3 from '../assets/Icon.svg'
 import logoimg4 from '../assets/obile.svg'
 import logoimg5 from '../assets/book.svg'
 import arrow from '../assets/Arrow (1).svg'
-import arrow2 from '../assets/orange.svg'
+
 import work from '../assets/WORK bg.png'
 
 
@@ -60,7 +60,7 @@ const Service = () => {
                                 </h1>
                                 <div className="flex items-center gap-170 mt-6  ">
                                   <small className="text-gray-400 text-base">Explore More</small>
-                                    <img src={arrow2} alt="Arrow" className="w-[80px] h-[80px] p-1  " />
+                                     <img src={arrow} alt="Arrow 3" className="w-[80px] h-[80px] hover:bg-orange-500 rounded-full cursor-pointer " />
                                 </div>
                             </div>
                         </div>
@@ -78,7 +78,7 @@ const Service = () => {
                                 <div className=" flex gap-170 mt-6 ">
                                     <small className="text-gray-400 text-base">Explore More</small>
                                  
-                                    <img src={arrow} alt="Arrow 3" className="w-[80px] h-[80px]   " />
+                                    <img src={arrow} alt="Arrow 3" className="w-[80px] h-[80px]   hover:bg-orange-500 rounded-full cursor-pointer  " />
                                 </div>
                             </div>
                         </div>
@@ -91,10 +91,10 @@ const Service = () => {
 
 
 
+ 
 
 
-
-                        <div className='flex gap-6 items-start'>
+                        <div className='flex gap-6 items- mt-6'>
                             <img src={logoimg4} alt="" className="w-[90px] h-[114px]" />
 
                             <div>
@@ -107,10 +107,10 @@ const Service = () => {
 
 
 
-                                <div className="flex items-center gap-170">
+                                <div className="flex  gap-170">
 
                                     <small className="text-gray-400 text-base">Explore More</small>
-                                    <img src={arrow} alt="Arrow 3" className="w-[80px] h-[80px]" />
+                                    <img src={arrow} alt="Arrow 3" className="w-[80px] h-[80px] hover:bg-orange-500 rounded-full cursor-pointer " />
                                 </div>
                             </div>
 

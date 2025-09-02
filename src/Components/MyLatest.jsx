@@ -1,9 +1,10 @@
 import React, { useRef } from 'react';
 import img from '../assets/image 2495.png';
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import logoimg from '../assets/image 2507.svg';
 import underline from '../assets/Arrow.png';
-import slider from '../assets/Slider Button.svg';
+
 import icon from '../assets/round bg icon.svg';
 import button from '../assets/Button.svg';
 import shape from '../assets/rain.svg';
@@ -11,6 +12,7 @@ import { FaMobileAlt } from 'react-icons/fa';
 
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { FaLongArrowAltLeft } from "react-icons/fa";
+import Slider from 'react-slick';
 
 
 
@@ -26,6 +28,21 @@ const MyLatest = () => {
   const scrollRight = () => {
     sliderRef.current.scrollBy({ left: 600, behavior: 'smooth' });
   };
+
+
+
+  const settings = {
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    centerPadding: "60px",
+    slidesToShow: 1,
+    speed: 500
+  };
+
+
+
+
 
   return (
     <div className="">
@@ -69,7 +86,7 @@ const MyLatest = () => {
         ref={sliderRef}
         className="flex gap-[80px] scroll-smooth overflow-hidden"
       >
-        {/* Card 1 */}
+
         <div
           className="w-[800px] h-[500px] bg-[#F5F4F5] flex items-center rounded-4xl shrink-0"
           style={{
@@ -100,7 +117,7 @@ const MyLatest = () => {
           </div>
         </div>
 
-        {/* Card 2 */}
+
         <div
           className="w-[800px] h-[500px] bg-[#F5F4F5] flex items-center rounded-4xl shrink-0"
           style={{
@@ -131,7 +148,7 @@ const MyLatest = () => {
           </div>
         </div>
 
-        {/* Card 3 */}
+
         <div
           className="w-[800px] h-[500px] bg-[#F5F4F5] flex items-center rounded-4xl shrink-0"
           style={{
@@ -162,7 +179,68 @@ const MyLatest = () => {
           </div>
         </div>
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div className='py-10'>
+
+
+
+
+        <div className="">
+          <Slider {...settings}>
+            <div>
+              <h3>1</h3>
+            </div>
+            <div>
+              <h3>2</h3>
+            </div>
+            <div>
+              <h3>3</h3>
+            </div>
+            <div>
+              <h3>4</h3>
+            </div>
+            <div>
+              <h3>5</h3>
+            </div>
+            <div>
+              <h3>6</h3>
+            </div>
+               <div>
+              <h3>6</h3>
+            </div>
+               <div>
+              <h3>6</h3>
+            </div>
+               <div>
+              <h3>6</h3>
+            </div>
+
+               <div>
+              <h3>6</h3>
+            </div>
+          </Slider>
+        </div>
+      </div>
+
     </div>
+
+
+
+
+
   );
 };
 

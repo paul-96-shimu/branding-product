@@ -140,7 +140,7 @@ const Footer = () => {
                         <div className='flex items-center gap-6 mt-20'>
 
                             <div className=''>
-                                <img src={location} alt="" className='w-[48px] bg-black' />
+                                <img src={location} alt="" className='w-[48px] ' />
                             </div>
                             <div>
                                 <small className="text-[rgba(255, 255, 255, 0.4)] text-[20px]">Office</small>

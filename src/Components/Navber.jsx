@@ -45,7 +45,7 @@ const Navber = () => {
           <img
             src={logo3}
             alt="menu"
-            className="cursor-pointer"
+            className="cursor-pointer w-[71px] h-[50px]"
             onClick={() => setMenuOpen(!menuOpen)}
           />
 
