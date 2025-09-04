@@ -38,22 +38,22 @@ const Footer = () => {
 
 
 
-                    <div className="bg-[#111111] rounded-2xl w-[829px] h-[590px] p-20 text-white mb-46">
+                    <div className="bg-[#111111] rounded-2xl w-[829px] h-[590px] pl-20 pt-10 pr-10 text-white mb-46">
                         {/* Name Field */}
                         <div>
-                            <label className="text-sm text-gray-400 block mb-1">
+                            <label className="text-sm text-gray-400 block ">
                                 Name<span className="text-red-white">*</span>
                             </label>
                             <input
                                 type="text"
                                 readOnly
-                                className="bg-transparent w-full border-b border-gray-600 outline-none py-2 text-white"
+                                className="bg-transparent w-full border-b border-gray-600 outline-none py-2 text-white mb-6"
                             />
                         </div>
 
                         {/* Email Field */}
                         <div>
-                            <label className="text-sm text-gray-400 block mb-1">
+                            <label className="text-sm text-gray-400 block mb-6">
                                 Email<span className="text-red-white">*</span>
                             </label>
                             <input

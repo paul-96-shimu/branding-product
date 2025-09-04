@@ -19,15 +19,7 @@ import Slider from 'react-slick';
 const MyLatest = () => {
   const sliderRef = useRef(null);
 
-  // Left scroll
-  const scrollLeft = () => {
-    sliderRef.current.scrollBy({ left: -600, behavior: 'smooth' });
-  };
 
-  // Right scroll
-  const scrollRight = () => {
-    sliderRef.current.scrollBy({ left: 600, behavior: 'smooth' });
-  };
 
 
 
@@ -35,10 +27,17 @@ const MyLatest = () => {
     className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding: "60px",
-    slidesToShow: 1,
-    speed: 500
-  };
+    centerPadding: "200px", 
+    slidesToShow: 1,       
+    speed: 500,
+    arrows: false,  
+  }
+
+
+
+
+
+
 
 
 
@@ -60,12 +59,16 @@ const MyLatest = () => {
           </div>
         </p>
 
-        {/* Slider Buttons */}
+
+
+
+
+           {/* Custom Arrows */}
 
         <div className="flex items-center gap-4">
           {/* Left Button */}
           <button
-            onClick={scrollLeft}
+            onClick={() => sliderRef.current.slickPrev()}
             className="w-12 h-12 flex items-center justify-center rounded-full border border-black bg-white hover:bg-gray-100 transition"
           >
             <FaLongArrowAltLeft className="w-5 h-5 text-black" />
@@ -73,7 +76,7 @@ const MyLatest = () => {
 
           {/* Right Button */}
           <button
-            onClick={scrollRight}
+            onClick={() => sliderRef.current.slickNext()}
             className="w-12 h-12 flex items-center justify-center rounded-full bg-black hover:bg-gray-800 transition"
           >
             <FaLongArrowAltRight className="w-5 h-5 text-white" />
@@ -81,103 +84,43 @@ const MyLatest = () => {
         </div>
       </div>
 
-      {/* Slider Section */}
-      <div
-        ref={sliderRef}
-        className="flex gap-[80px] scroll-smooth overflow-hidden"
-      >
-
-        <div
-          className="w-[800px] h-[500px] bg-[#F5F4F5] flex items-center rounded-4xl shrink-0"
-          style={{
-            backgroundImage: `url(${img})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-          }}
-        >
-          <div className="pt-10 pl-10 pb-8">
-            <div className="relative mb-6">
-              <img src={icon} alt="" className="w-[68px] h-[68px]" />
-              <FaMobileAlt className="text-4xl text-white absolute top-5 left-5 w-[26px] h-[26px]" />
-            </div>
-            <h1 className="text-[48px] font-normal text-black">
-              Mobile Application <br /> Design.
-            </h1>
-            <p className="mt-4 text-gray-600">
-              Commonly used in the graphic, print <br />
-              & publishing industris for previewing visual <br /> layout and
-              mockups.
-            </p>
-
-            <div className="flex gap-20 mt-6">
-              <img src={button} alt="Star" className="mx-auto mt-2" />
-              <img src={shape} alt="Star" className="mx-auto mt-2  w-10" />
-            </div>
-          </div>
-        </div>
+    
 
 
-        <div
-          className="w-[800px] h-[500px] bg-[#F5F4F5] flex items-center rounded-4xl shrink-0"
-          style={{
-            backgroundImage: `url(${img})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-          }}
-        >
-          <div className="pt-10 pl-10 pb-8">
-            <div className="relative mb-6">
-              <img src={icon} alt="" className="w-[68px] h-[68px]" />
-              <FaMobileAlt className="text-4xl text-white absolute top-5 left-5 w-[26px] h-[26px]" />
-            </div>
-            <h1 className="text-[48px] font-normal text-black">
-              Mobile Application <br /> Design.
-            </h1>
-            <p className="mt-4 text-gray-600">
-              Commonly used in the graphic, print <br />
-              & publishing industris for previewing visual <br /> layout and
-              mockups.
-            </p>
 
-            <div className="flex gap-20 mt-6">
-              <img src={button} alt="Star" className="mx-auto mt-2" />
-              <img src={shape} alt="Star" className="mx-auto mt-2  w-10" />
+      <div className="slider-container">
+       <Slider ref={sliderRef} {...settings}>
+        {[1, 2, 3].map((item) => (
+          <div key={item} className="px-4">
+            <div
+              className="w-full h-[500px] bg-[#F5F4F5] flex items-center rounded-4xl relative "
+              style={{
+                backgroundImage: `url(${img})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+              }}
+            >
+              <div className="p-10">
+                <div className="relative mb-6">
+                  <img src={icon} alt="" className="w-16 h-16" />
+                  <FaMobileAlt className="text-4xl text-white absolute top-5 left-5 w-6 h-6" />
+                </div>
+                <h1 className="text-4xl font-normal text-black">
+                  Mobile Application <br /> Design.
+                </h1>
+                <p className="mt-4 text-gray-600 max-w-md">
+                  Commonly used in the graphic, print & publishing industris for previewing visual layout and mockups.
+                </p>
+                <div className="flex gap-6 mt-6">
+                  <img src={button} alt="Button" className="w-16" />
+                  <img src={shape} alt="Shape" className="w-10" />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-
-
-        <div
-          className="w-[800px] h-[500px] bg-[#F5F4F5] flex items-center rounded-4xl shrink-0"
-          style={{
-            backgroundImage: `url(${img})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-          }}
-        >
-          <div className="pt-10 pl-10 pb-8">
-            <div className="relative mb-6">
-              <img src={icon} alt="" className="w-[68px] h-[68px]" />
-              <FaMobileAlt className="text-4xl text-white absolute top-5 left-5 w-[26px] h-[26px]" />
-            </div>
-            <h1 className="text-[48px] font-normal text-black">
-              Mobile Application <br /> Design.
-            </h1>
-            <p className="mt-4 text-gray-600">
-              Commonly used in the graphic, print <br />
-              & publishing industris for previewing visual <br /> layout and
-              mockups.
-            </p>
-
-            <div className="flex gap-20 mt-6">
-              <img src={button} alt="Star" className="mx-auto mt-2" />
-              <img src={shape} alt="Star" className="mx-auto mt-2  w-10" />
-            </div>
-          </div>
-        </div>
+        ))}
+      </Slider>
       </div>
 
 
@@ -187,53 +130,6 @@ const MyLatest = () => {
 
 
 
-
-
-
-
-
-
-      <div className='py-10'>
-
-
-
-
-        <div className="">
-          <Slider {...settings}>
-            <div>
-              <h3>1</h3>
-            </div>
-            <div>
-              <h3>2</h3>
-            </div>
-            <div>
-              <h3>3</h3>
-            </div>
-            <div>
-              <h3>4</h3>
-            </div>
-            <div>
-              <h3>5</h3>
-            </div>
-            <div>
-              <h3>6</h3>
-            </div>
-               <div>
-              <h3>6</h3>
-            </div>
-               <div>
-              <h3>6</h3>
-            </div>
-               <div>
-              <h3>6</h3>
-            </div>
-
-               <div>
-              <h3>6</h3>
-            </div>
-          </Slider>
-        </div>
-      </div>
 
     </div>
 

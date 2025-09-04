@@ -50,7 +50,7 @@ const Service = () => {
 
                     <div className='mt-100  mb-40'>
 
-                           {/* Service 1 */}
+                        {/* Service 1 */}
                         <div className="flex items-start gap-12 leading-14">
                             <img src={logoimg3} alt="" className="w-[99px] h-[95px]" />
 
@@ -59,8 +59,8 @@ const Service = () => {
                                     Web & UI/UX <br /> Design.
                                 </h1>
                                 <div className="flex items-center gap-170 mt-6  ">
-                                  <small className="text-gray-400 text-base">Explore More</small>
-                                     <img src={arrow} alt="Arrow 3" className="w-[80px] h-[80px] hover:bg-orange-500 rounded-full cursor-pointer " />
+                                    <small className="text-gray-400 text-base">Explore More</small>
+                                    <img src={arrow} alt="Arrow 3" className="w-[80px] h-[80px] hover:bg-orange-500 rounded-full cursor-pointer " />
                                 </div>
                             </div>
                         </div>
@@ -77,21 +77,13 @@ const Service = () => {
                                 </h1>
                                 <div className=" flex gap-170 mt-6 ">
                                     <small className="text-gray-400 text-base">Explore More</small>
-                                 
+
                                     <img src={arrow} alt="Arrow 3" className="w-[80px] h-[80px]   hover:bg-orange-500 rounded-full cursor-pointer  " />
                                 </div>
                             </div>
                         </div>
 
 
-
-
-
-
-
-
-
- 
 
 
                         <div className='flex gap-6 items- mt-6'>
@@ -131,6 +123,7 @@ const Service = () => {
             <img src={work} alt="" className='absolute w-full bottom-[-111px] px-[145px]' />
 
         </div>
+
 
 
 
