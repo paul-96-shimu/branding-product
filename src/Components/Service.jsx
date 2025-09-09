@@ -7,6 +7,7 @@ import logoimg4 from '../assets/obile.svg'
 import logoimg5 from '../assets/book.svg'
 import arrow from '../assets/Arrow (1).svg'
 
+
 import work from '../assets/WORK bg.png'
 
 
@@ -14,25 +15,19 @@ const Service = () => {
     return (
         <div className='relative'>
 
-
-
-
-
-
-
-
             <div className='bg-[#141414]  '>
 
-                <div className=' container mx-auto flex   gap-19 items-center '>
+                <div className='pt-[155px] pl-[179px]  flex gap-[76px]  '>
 
-                    <div>
-                        <h1 className=''> <span className='text-white text-6xl '>Service That </span> <br />
-                            <span className='text-gray-400  text-6xl'>I Offer.</span></h1>
 
-                        <img src={logoimg} alt="" className='w-45
-                    ' />
+                    <div className=' '>
+                        <h1 className=''> <span className='text-white text-[90px] leading-[100px]'>Service That </span> <br />
+                            <span className='text-[rgba(255,255,255,0.40)] text-[90px] leading-[100px]'>I Offer.</span></h1>
 
-                        <p className='text-sm text-gray-600 '>
+                        <img src={logoimg} alt="" className='w-45 ' />
+
+
+                        <p className='text-[24px] text-[rgba(255,255,255,0.4)] mt-[50px] ' >
                             Providing design services for last 8 years <br />
                             with trust and love.
                         </p>
@@ -48,11 +43,11 @@ const Service = () => {
                     </div>
 
 
-                    <div className='mt-100  mb-40'>
+                    <div className='mt-30 pb-[255px]'>
 
                         {/* Service 1 */}
                         <div className="flex items-start gap-12 leading-14">
-                            <img src={logoimg3} alt="" className="w-[99px] h-[95px]" />
+                            <img src={logoimg3} alt="" className="w-[99px] h-[95px] leading-[64px]" />
 
                             <div>
                                 <h1 className="text-white text-[54px]">
@@ -60,39 +55,54 @@ const Service = () => {
                                 </h1>
                                 <div className="flex items-center gap-170 mt-6  ">
                                     <small className="text-gray-400 text-base">Explore More</small>
-                                    <img src={arrow} alt="Arrow 3" className="w-[80px] h-[80px] hover:bg-orange-500 rounded-full cursor-pointer " />
+                                  <button className="w-[80px] h-[80px] flex items-center justify-center rounded-full hover:bg-orange-500 transition cursor-pointer ">
+                                        <img src={arrow} alt="Arrow 3" className="w-[80px] h-[80px]  " />
+                                    </button>
                                 </div>
+
+
                             </div>
+
+
                         </div>
+                        <div className='border-b border-[rgba(255,255,255,0.08)] mt-6'></div>
+
+
+
 
 
 
 
                         {/* Service 2 */}
-                        <div className="flex gap-6 items-start">
+                        <div className="flex  gap-12 leading-14 items-start mt-26">
                             <img src={logoimg5} alt="" className="w-[103px] h-[103px]" />
                             <div>
-                                <h1 className="text-white text-[54px] ">
+                                <h1 className="text-white text-[54px] leading-[64px] ">
                                     Brand & Product <br /> Design.
                                 </h1>
                                 <div className=" flex gap-170 mt-6 ">
                                     <small className="text-gray-400 text-base">Explore More</small>
 
-                                    <img src={arrow} alt="Arrow 3" className="w-[80px] h-[80px]   hover:bg-orange-500 rounded-full cursor-pointer  " />
+                                  <button className="w-[80px] h-[80px] flex items-center justify-center rounded-full hover:bg-orange-500 transition cursor-pointer ">
+                                        <img src={arrow} alt="Arrow 3" className="w-[80px] h-[80px]  " />
+                                    </button>
                                 </div>
+
+                               
+                                
                             </div>
                         </div>
 
+                        <div className='border-b border-[rgba(255,255,255,0.08)] mt-6'></div>
 
 
-
-                        <div className='flex gap-6 items- mt-6'>
+                        <div className='flex gap-12 leading-14 items-start mt-26'>
                             <img src={logoimg4} alt="" className="w-[90px] h-[114px]" />
 
                             <div>
 
 
-                                <h1 className="text-white text-[54px] ">
+                                <h1 className="text-white text-[54px]  leading-[64px] ">
                                     Mobile App <br /> Design.
                                 </h1>
 
@@ -101,9 +111,15 @@ const Service = () => {
 
                                 <div className="flex  gap-170">
 
-                                    <small className="text-gray-400 text-base">Explore More</small>
-                                    <img src={arrow} alt="Arrow 3" className="w-[80px] h-[80px] hover:bg-orange-500 rounded-full cursor-pointer " />
+                                    <small className="text-gray-400 text-base mt-[40px]">Explore More</small>
+                                    <button className="w-[80px] h-[80px] flex items-center justify-center rounded-full hover:bg-orange-500 transition cursor-pointer ">
+                                        <img src={arrow} alt="Arrow 3" className="w-[80px] h-[80px]  " />
+                                    </button>
                                 </div>
+
+
+                              
+
                             </div>
 
 
@@ -112,7 +128,7 @@ const Service = () => {
                         </div>
 
 
-
+                        <div className='border-b border-[rgba(255,255,255,0.08)] mt-6'></div>
 
                     </div>
                 </div>
@@ -120,7 +136,7 @@ const Service = () => {
 
 
 
-            <img src={work} alt="" className='absolute w-full bottom-[-111px] px-[145px]' />
+            <img src={work} alt="" className='absolute w-full bottom-[-111px] ' />
 
         </div>
 

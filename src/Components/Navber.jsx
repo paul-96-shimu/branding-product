@@ -11,7 +11,7 @@ const Navber = () => {
   const menuItems = ["Home", "Work", "About", "Contact"];
 
   return (
-    <div className="navbar mb-30 container mx-auto relative">
+    <div className="navbar mb-30 w-[1803px] mx-auto relative font-face ">
       {/* Navbar start */}
       <div className="navbar-start flex items-center gap-3.5">
         <img src={logo} alt="" className="bg-black p-4" />
@@ -22,12 +22,20 @@ const Navber = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-2xl flex gap-6 text-[#141414] family">
           {menuItems.map((item, idx) => (
-            <li key={idx} className="relative group">
-              <a className="font-satoshi relative">
+            <li key={idx} className="relative group hover:bg-transparent">
+              <a className="font-satoshi relative hover:bg-transparent">
                 {item}
-                <div className="absolute w-full h-full top-[-30px] left-[-35px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute w-full h-full top-[-30px] left-[-30px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <img className="w-full min-w-[167px]" src={logo4} alt="" />
                 </div>
+
+
+
+
+                {/* <div className="absolute inset-0 -top-2 -left-2 -right-2 -bottom-2 
+                    opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <img src={logo4} alt="" className="w-full h-full object-contain" />
+                </div> */}
               </a>
             </li>
           ))}
@@ -50,7 +58,7 @@ const Navber = () => {
           />
 
           {/* Mobile dropdown menu */}
-          <ul className={`menu menu-sm dropdown-content bg-base-100 rounded-box z-40 mt-2 w-52 p-2 shadow text-2xl absolute right-0 top-full transition-all duration-300
+          <ul className={`menu menu-sm dropdown-content  rounded-box z-40 mt-2 w-52 p-2 shadow text-2xl absolute right-0 top-full transition-all duration-300
             ${menuOpen ? 'block' : 'hidden'} lg:hidden`}>
             {menuItems.map((item, idx) => (
               <li key={idx} className="relative group">

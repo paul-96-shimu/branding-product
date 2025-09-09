@@ -4,8 +4,8 @@ import star from '../assets/Star 1.svg';
 
 
 
-import location from '../assets/footerLocation Icon.svg'
-import phone from '../assets/fotter phIcon.svg'
+import location from '../assets/loct.png'
+import phone from '../assets/ph.png'
 import sms from '../assets/Message.svg'
 import shape from '../assets/white rain.svg'
 import logo2 from '../assets/potoLogo.svg'
@@ -22,7 +22,7 @@ const Footer = () => {
                         <div>
 
                             <h1 className="text-8xl ">
-                                <span className="text-[(255, 255, 255, 0.40)] ">Let’s</span>
+                                <span className="text-[rgba(255,255,255,0.40)] ">Let’s</span>
                                 <span className="text-white ml-2">Start</span> <br />
                                 <span className="text-[#FF6F0F]">Talking.</span>
 
@@ -46,7 +46,7 @@ const Footer = () => {
                             </label>
                             <input
                                 type="text"
-                                readOnly
+                                 placeholder=""
                                 className="bg-transparent w-full border-b border-gray-600 outline-none py-2 text-white mb-6"
                             />
                         </div>
@@ -59,7 +59,7 @@ const Footer = () => {
                             <input
                                 type="email"
 
-                                readOnly
+                                   placeholder=""
                                 className="bg-transparent w-full border-b border-gray-600 outline-none py-2 text-white"
                             />
                         </div>
@@ -103,7 +103,7 @@ const Footer = () => {
                             <img src={star} alt="Star" className=" w-[252px] h-[252px]" />
 
 
-                            <div className="absolute inset-0 flex  flex-col items-center justify-center  font-bold  text-black right-30 -rotate-20 ">
+                            <div className="absolute inset-0 flex  flex-col items-center justify-center  text-[22px] font-bold  text-black right-30 -rotate-30  ml-6 ">
                                 <h6>LET’S <br /> ROCK & ROLL</h6>
 
                                 <div className=" border-t border-black mt-1 w-[133px]" />
@@ -123,8 +123,8 @@ const Footer = () => {
                                 <img src={sms} alt="" className='w-[57px]' />
                             </div>
                             <div>
-                                <small className="text-gray-400 text-[20px]">Email</small>
-                                <h3 className="text-[28px]">Hellome@rakabir.com</h3>
+                                <small className="text-[rgba(255,255,255,0.4)] text-[20px]">Email</small>
+                                <h3 className="text-[28px] text-[rgba(255,255,255,0.8)] ">Hellome@rakabir.com</h3>
                             </div>
                         </div>
                         <div className='flex items-center gap-6 mt-20'>
@@ -133,8 +133,8 @@ const Footer = () => {
                                 <img src={phone} alt="" className='w-[53px]' />
                             </div>
                             <div>
-                                <small className="text-gray-400 text-[20px]">Phone</small>
-                                <h3 className="text-[24px]">+(21) 920 100 320</h3>
+                                <small className="text-[rgba(255,255,255,0.4)]  text-[20px]">Phone</small>
+                                <h3 className="text-[24px] text-[rgba(255,255,255,0.8)] ">+(21) 920 100 320</h3>
                             </div>
                         </div>
                         <div className='flex items-center gap-6 mt-20'>
@@ -143,8 +143,8 @@ const Footer = () => {
                                 <img src={location} alt="" className='w-[48px] ' />
                             </div>
                             <div>
-                                <small className="text-[rgba(255, 255, 255, 0.4)] text-[20px]">Office</small>
-                                <h3 className="text-[24px] text-[rgba(255, 255, 255, 0.8)] font-normal">
+                                <small className="text-[rgba(255,255,255,0.4)] text-[20px]">Office</small>
+                                <h3 className="text-[24px] text-[rgba(255,255,255,0.8)] font-normal">
                                     210 Qilo Street, California, <br />
                                     Main OC, USA
                                 </h3>
@@ -180,12 +180,12 @@ const Footer = () => {
 
             <div className=" border-t border-gray-700  text-sm flex justify-between items-center container mx-auto
             ">
-                <h6 >  <span >©2025. </span> <span className="text-gray-500">All Right Reserved</span></h6>
+                <h6 >  <span >©2025. </span> <span className="text-[rgba(255,255,255,0.40)]">All Right Reserved</span></h6>
                 <img src={logo2} alt="" />
                 <div className="text-gray-500 space-x-4 pb-10 mt-15 ">
                     <a href="#" className='text-white text-sm'>Insta</a>  .
-                    <a href="#" className='text-gray-500 text-sm'>Facebook</a>  .
-                    <a href="#" className='text-gray-500 text-sm'>Twitter</a>
+                    <a href="#" className='text-[rgba(255,255,255,0.40)] text-sm'>Facebook</a>  .
+                    <a href="#" className='text-[rgba(255,255,255,0.40)] text-sm'>Twitter</a>
                 </div>
             </div>
 

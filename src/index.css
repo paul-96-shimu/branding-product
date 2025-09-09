@@ -3,6 +3,9 @@
 
 @plugin "daisyui";
 
+/* ============================= */
+/*   Custom Satoshi Font Import  */
+/* ============================= */
 @font-face {
   font-family: 'Satoshi';
   src: url('/Fonts/OTF/Satoshi-Regular.otf') format('opentype');
@@ -19,43 +22,10 @@
   font-display: swap;
 }
 
-.font-satoshi-extra {
+/* Extra utility for Satoshi */
+.font-satoshi {
   font-family: 'Satoshi', sans-serif;
 }
-
 body {
   font-family: 'Outfit', sans-serif;
-}
-/* স্লাইড ট্রানজিশন স্মুথ */
-.myCenteredSwiper .swiper-slide {
-  transition: transform .6s ease, opacity .6s ease;
-}
-
-/* কেন্দ্রের স্লাইড = বড়/ফোকাসড */
-.myCenteredSwiper .swiper-slide-active > div {
-  transform: scale(1);
-  opacity: 1;
-}
-
-/* দুই পাশের স্লাইড = ছোট/হালকা */
-.myCenteredSwiper .swiper-slide-prev > div,
-.myCenteredSwiper .swiper-slide-next > div {
-  transform: scale(0.82);
-  opacity: 0.8;
-}
-
-/* আরও পাশে থাকলে একটু ছোট/ফেড (ঐচ্ছিক) */
-.myCenteredSwiper .swiper-slide-prev ~ .swiper-slide > div,
-.myCenteredSwiper .swiper-slide-next ~ .swiper-slide > div {
-  transform: scale(0.76);
-  opacity: 0.65;
-}
-
-/* container div smooth scaling (Tailwind থাকলে inline-ও করা যায়) */
-.myCenteredSwiper .swiper-slide > div {
-  transition: transform .6s ease, opacity .6s ease, box-shadow .6s ease;
-  box-shadow: 0 8px 28px rgba(0,0,0,.06);
-}
-.myCenteredSwiper .swiper-slide-active > div {
-  box-shadow: 0 20px 60px rgba(0,0,0,.12);
 }

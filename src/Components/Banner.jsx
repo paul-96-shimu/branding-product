@@ -16,12 +16,13 @@ import image0 from '../assets/double-quote-left.png'
 import image2 from '../assets/black Ellipse 881.png'
 import image3 from '../assets/Rectangle 3793 (1).png'
 import link from '../assets/Linkeding.svg'
+import hand from '../assets/hand.png'
 import Navber from './Navber';
 
 const Banner = () => {
     return (
         <div
-            className=" relative pb-46
+            className=" relative  font-outfit
             
             "
             style={{
@@ -42,27 +43,27 @@ const Banner = () => {
             </div>
 
 
-            <div className="container mx-auto pb-40 ">
-                <h3 className="text-3xl mb-4 ">Hi, I’M JON KABIR</h3>
+            <div className=" w-[1803px] mx-auto pb-40 pl-[115px] ">
+                <h3 className="text-3xl mb-4  flex gap-6 items-center">Hi, I’M JON KABIR <img src={hand} alt="" className='w-[25px] h-[25px]'/></h3>
                 <p className="mb-6">
                     <div className='flex items-center  gap-10'>
-                        <span className="text-[#FF6F0F] text-7xl font-bold font">Branding,</span> <br />
+                        <span className="text-[#FF6F0F] text-[130px] font-normal  leading-[130px]">Branding,</span> <br />
                         <img src={underline3} alt="" className='w-[295px] h-[116px]' />
                     </div>
-                    <span className="text-7xl font-bold text-black ">Product UI/UX</span> <br />
-                    <span className="text-7xl font-bold text-[#9E9E9E]">& Design.</span>
+                    <span className="text-[130px] font-normal  text-black leading-[130px]">Product UI/UX</span> <br />
+                    <span className="text-[130px] font-normal  text-[#9E9E9E] leading-[130px]">& Design.</span>
                 </p>
 
-                <div className="mb-6">
+                <div className=" mt-[28px]">
                     <small className="block text-[15px] font-semibold text-[rgba(0,0,0,0.6)]">EMAIL</small>
-                    <p className="text-[28px] text-[#040404]">Contact@rakabir.com</p>
-                     <img src={underline} alt="underline1" className='w-[530px]' />
+                    <p className="text-[28px] text-[#040404]  mb-0 ">Contact@rakabir.com</p>
+                     <img src={underline} alt="underline1" className='w-[530px]  -mt-5' />
                 </div>
 
                 
 
                 {/* Button & Social */}
-                <div className="flex items-center gap-10">
+                <div className="flex items-center gap-10 mt-[76px]">
                     <button
                         type="button"
                         className="text-white bg-[#FF6F0F] rounded-full text-xl px-6 py-3 flex items-center gap-3"
@@ -71,13 +72,13 @@ const Banner = () => {
                     </button>
 
                     <div className="flex items-center gap-4 mt-4">
-                        <h2 className="font-semibold">Social</h2>
+                        <h2 className="font-semibold text-[18px]">Social</h2>
                         <FaFacebookF className="bg-white text-black p-4 w-15 h-15 rounded-full" />
                         <FaInstagram className="bg-white text-black  p-4 w-15 h-15 rounded-full" />
                         <img src={link} alt="" className=' w-15 h-15 ' />
                     </div>
 
-                    <div className='absolute right-160 bottom-5 z-0'  >
+                    <div className='absolute right-160 bottom-15 z-0'  >
 
                         <img src={image3} alt="" className='w-[390px]' />
 

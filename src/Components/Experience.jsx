@@ -1,6 +1,7 @@
 import React from 'react';
 import logoimg from '../assets/image 2507.svg'
-import logoimg2 from '../assets/round arrow.svg'
+// import logoimg2 from '../assets/round arrow.svg'
+import { GoArrowUpRight } from "react-icons/go";
 
 const Experience = () => {
     return (
@@ -8,21 +9,22 @@ const Experience = () => {
             <div className=' container mx-auto  mt-55'>
                 <div className='flex justify-between  items-center'>
 
-                    <div>
+                    <div  className="relative inline-block">
                         <h2 className='font-medium'>
-                            <span className='text-[#000] text-[90px]'>My Experience </span> <br />
-                            <span className='text-[rgba(0,0,0,0.4)] text-[90px] mt-4'>& Skills.</span>
+                            <span className='text-[#000] text-[90px]  '>My Experience </span> <br />
+                            <span className='text-[rgba(0,0,0,0.4)] text-[90px] mt-4  leading-[110px]'>& Skills.</span>
 
-                            <img src={logoimg} alt="" className='w-[311px] h-[79px]' />
+                            <img src={logoimg} alt="" className='absolute top-50 w-[311px] h-[79px] rotate-0' />
 
                         </h2>
                     </div>
 
 
-                    <div>
+                    <button className='flex items-center gap-4  hover:bg-black hover:text-white transition duration-300 rounded-full border border-black  text-[40px] pt-[73px] 
+                    pb-[73px] pl-[76px] pr-[70px] '>
 
-                        <img src={logoimg2} alt="" className='w-[205px]' />
-                    </div>
+                     <GoArrowUpRight />
+                    </button>
 
                 </div>
 
@@ -32,27 +34,27 @@ const Experience = () => {
 
                 {/* experience part */}
 
-                <div className=' flex'>
+                <div className=' flex items-center'>
                     <div>
                         <div>
                             <div>
-                                <h3 className='text-black text-4xl font-medium'>Experience </h3>
-                                <div className='border mt-12'>  </div>
+                                <h3 className='text-black text-4xl font-medium leading-[100px] mt-[57px]'>Experience </h3>
+                                <div className='border mt-[50px]'>  </div>
                             </div>
 
-                            <div className=' grid grid-cols-3 mt-12  gap-25  items-center justify-center'>
+                            <div className=' grid grid-cols-3 mt-12  gap-70 items-center justify-center'>
                                 <small className=' text-xl font-normal'>
                                     2019 - Present
                                 </small>
                                 <div  className='whitespace-nowrap'>
-                                    <h4 className='text-2xl'> Product Designer</h4>
+                                    <h4 className='text-[28px] text-black font-medium'> Product Designer</h4>
 
-                                    <small className='text-gray-300'>
+                                    <small className='text-[rgba(0,0,0,0.35)] text-[20px] font-normal'>
                                         Amazon Inc
                                     </small>
                                 </div>
 
-                                <p className='text-gray-300 font-thin  text-7xl'>01</p>
+                                <p className='text-[rgba(0,0,0,0.35)] font-thin text-[80px]'>01</p>
                             </div>
 
                         </div>
@@ -68,19 +70,19 @@ const Experience = () => {
                             <div className='border mt-12'>  </div>
                         </div>
 
-                        <div className=' grid grid-cols-3  gap-25 mt-12 items-center justify-center'>
+                        <div className=' grid grid-cols-3  gap-70 mt-12 items-center justify-center'>
                             <small className=' text-xl font-normal'>
                                 2011 - 2014
                             </small>
                             <div  className='whitespace-nowrap'>
-                                <h4 className='text-2xl'> Art & Design Director</h4>
+                                <h4 className='text-[28px] text-black font-medium'> Art & Design Director</h4>
 
-                                <small className='text-gray-300'>
+                                <small className='text-[rgba(0,0,0,0.35)] text-[20px] font-normal'>
                                     Blue Orizon Inc
                                 </small>
                             </div>
 
-                            <p className='text-gray-300 font-thin  text-7xl'>02</p>
+                            <p className='text-[rgba(0,0,0,0.35)] font-thin  text-[80px]'>02</p>
                         </div>
 
 
@@ -95,19 +97,19 @@ const Experience = () => {
 
 
 
-                        <div className=' grid grid-cols-3 gap-25 mt-12 items-center justify-center'>
+                        <div className=' grid grid-cols-3 gap-70 mt-12 items-center justify-center'>
                             <small className=' text-xl font-normal'>
                                 2011 - 2014
                             </small>
                             <div  className='whitespace-nowrap'>
-                                <h4 className='text-2xl'> Senior Designer</h4>
+                                <h4 className='text-[28px] text-black font-medium'> Senior Designer</h4>
 
-                                <small className='text-gray-300'>
+                                <small className='text-[rgba(0,0,0,0.35)] text-[20px] font-normal'>
                                     Artilo Inc.
                                 </small>
                             </div>
 
-                            <p className='text-gray-300 font-thin  text-7xl'>03</p>
+                            <p className='text-[rgba(0,0,0,0.35)] font-thin  text-[80px]'>03</p>
                         </div>
 
 
@@ -165,8 +167,8 @@ const Experience = () => {
 
                             <div className='flex justify-between items-center w-full mt-4'>
 
-                                <small className='text-gray-300 font-normal'>Rising Star Designer</small>
-                                <small>2018</small>
+                                <small className='text-[rgba(0,0,0,0.35)] font-normal text-[22px]'>Rising Star Designer</small>
+                                <small className='text-black font-medium'>2018</small>
                             </div>
                         </div>
 
@@ -193,9 +195,9 @@ const Experience = () => {
 
 
 
-                            <div className='flex justify-between'>
-                                <small className='text-gray-300 font-normal'>UI/UX Award winner</small>
-                                <small>2023</small>
+                            <div className='flex justify-between mt-4'>
+                                <small className='text-[rgba(0,0,0,0.35)] font-normal text-[22px]'>UI/UX Award winner</small>
+                                <small className='text-black font-medium'>2023</small>
                             </div>
                         </div>
 
