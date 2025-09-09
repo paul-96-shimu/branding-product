@@ -38,8 +38,8 @@ const Experience = () => {
                     <div>
                         <div>
                             <div>
-                                <h3 className='text-black text-4xl font-medium leading-[100px] '>Experience </h3>
-                                <div className='border mt-[50px]'>  </div>
+                                <h3 className='text-black text-4xl font-medium leading-[100px] mt-25'>Experience </h3>
+                                <div className='border '>  </div>
                             </div>
 
                             <div className=' grid grid-cols-3 mt-12  gap-70 items-center justify-center'>
