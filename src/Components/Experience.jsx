@@ -38,12 +38,12 @@ const Experience = () => {
                     <div>
                         <div>
                             <div>
-                                <h3 className='text-black text-4xl font-medium leading-[100px] mt-[57px]'>Experience </h3>
+                                <h3 className='text-black text-4xl font-medium leading-[100px] '>Experience </h3>
                                 <div className='border mt-[50px]'>  </div>
                             </div>
 
                             <div className=' grid grid-cols-3 mt-12  gap-70 items-center justify-center'>
-                                <small className=' text-xl font-normal'>
+                                <small className=' text-xl font-normal  whitespace-nowrap'>
                                     2019 - Present
                                 </small>
                                 <div  className='whitespace-nowrap'>
@@ -67,11 +67,11 @@ const Experience = () => {
 
                         <div>
 
-                            <div className='border mt-12'>  </div>
+                            <div className='border '>  </div>
                         </div>
 
                         <div className=' grid grid-cols-3  gap-70 mt-12 items-center justify-center'>
-                            <small className=' text-xl font-normal'>
+                            <small className=' text-xl font-normal  whitespace-nowrap'>
                                 2011 - 2014
                             </small>
                             <div  className='whitespace-nowrap'>
@@ -98,7 +98,7 @@ const Experience = () => {
 
 
                         <div className=' grid grid-cols-3 gap-70 mt-12 items-center justify-center'>
-                            <small className=' text-xl font-normal'>
+                            <small className=' text-xl font-normal  whitespace-nowrap'>
                                 2011 - 2014
                             </small>
                             <div  className='whitespace-nowrap'>
